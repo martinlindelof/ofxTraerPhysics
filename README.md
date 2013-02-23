@@ -15,5 +15,3 @@ compared to cinder::Vec3.
 ## help wanted ##
 if you're interested in having a traer physics port that has no
 dependencies classes, please do a pull and help me fix it :)
-=======
-port of cinder traer physics, for openframeworks as standalone, no dependencies.
