@@ -1,24 +1,39 @@
-ofxTraerPhysics
-===============
+ofxTraerPhysics 3.0.1
+=====================
+Adaption from libcinder version of Traer Physics to dependencies less openframeworks version.
 
-## description ##
-port of cinder traer physics, for openframeworks as standalone, no dependencies.
-so this should work as other ofxAddons.
+Introduction
+------------
+Creates a easy to setup Particle System which can create particles and particle-to-particle forces. Original in Java but very popular for Processing, so many of you might used it with Processing.
 
-all credits goes to http://murderandcreate.com/physics/
-and those who did the c++ cinder port of traer.
+Licence
+-------
+Licensed under the same "do whatever you want just email Jeff" license as the
+Java/Processing version.
 
-## examples ##
-there are some examples in the /examples folder. if you're
-on 64bit linux you can run w/o compiling the app in /bin
+See http://murderandcreate.com/physics/ for the original Java code and examples.
 
-video of grid/spring example http://goo.gl/f9aAu
-video of random/flock example http://goo.gl/UH1ez
+See also https://github.com/bloomtime/CinderTraer for the c++ port this was based upon for cinder.
 
-## known issues ##
-seems ofVec3f might be behind some weird particle behaviours.
-compared to cinder::Vec3.
+Installation
+------------
+Just drop the folder into the `openFrameworks/addons/` folder. Or git clone. After you have done that I've made it easier to just include the ofxTraerPhysics.h which includes all the necessary headers.
 
-## help wanted ##
-if you're interested in having a traer physics port that has no
-dependencies classes, please do a pull and help me fix it :)
+Dependencies
+------------
+none
+
+Compatibility
+------------
+0.7.4
+
+Known issues
+------------
+There seems to be an issue with Particle Attraction sometimes. They [particles] jiggle a bit to much.
+
+Version history
+------------
+
+
+### Version 3.0.1 (Date): 2013-02-25
+Initial release w/ openframeworks version 0.7.4
