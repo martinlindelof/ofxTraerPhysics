@@ -59,29 +59,36 @@ namespace traer { namespace physics {
             // ci::Vec3f a2b = a->position - b->position;
             ofVec3f a2b = a->position - b->position;
 
-			float a2bDistanceSquared = a2b.lengthSquared();
-
+			float a2bX = a->position.x - b->position.x;
+			float a2bY = a->position.y - b->position.y;
+			float a2bZ = a->position.z - b->position.z;
+			
+			
+			float a2bDistanceSquared = a2bX*a2bX + a2bY*a2bY + a2bZ*a2bZ;
+			
 			if ( a2bDistanceSquared < distanceMinSquared )
-				a2bDistanceSquared = distanceMinSquared;
-
+			    a2bDistanceSquared = distanceMinSquared;
+			
 			float force = k * a->mass * b->mass / a2bDistanceSquared;
-
+			
+			float length = (float)sqrt( a2bDistanceSquared );
+			
 			// make unit vector
 			
-            //a2b /= sqrt(a2bDistanceSquared);
+			a2bX /= length;
+			a2bY /= length;
+			a2bZ /= length;
 			
-			// multiply by force 
+			// multiply by force
 			
-			//a2b *= force;
-            
-            a2b *= Q_rsqrt(a2bDistanceSquared) * force;
-
+			a2bX *= force;
+			a2bY *= force;
+			a2bZ *= force;
+			
 			// apply
 			
-			if ( !a->fixed )
-				a->force -= a2b;
-			if ( !b->fixed )
-				b->force += a2b;
+			if ( !a->fixed )a->force -= ofVec3f( -a2bX, -a2bY, -a2bZ );
+			if ( !b->fixed )b->force += ofVec3f( a2bX, a2bY, a2bZ );
 		}
 	}
 
