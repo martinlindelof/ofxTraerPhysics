@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\Attraction.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\EulerIntegrator.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\ModifiedEulerIntegrator.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\Particle.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\ParticleSystem.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\RungeKuttaIntegrator.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraerPhysics\src\Spring.cpp">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{8042975c-f565-4241-85cf-ee5c7ec30672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTraerPhysics">
+      <UniqueIdentifier>{ab4e446c-f2f0-4d91-8a24-4fc14ca72891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTraerPhysics\src">
+      <UniqueIdentifier>{de7d8534-4a03-480a-ad8a-83c52340c8e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\Attraction.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\EulerIntegrator.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\Force.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\Integrator.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\ModifiedEulerIntegrator.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\ofxTraerPhysics.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\Particle.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\ParticleSystem.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\RungeKuttaIntegrator.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraerPhysics\src\Spring.h">
+      <Filter>addons\ofxTraerPhysics\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

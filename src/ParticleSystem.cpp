@@ -64,7 +64,7 @@ namespace traer { namespace physics {
     //--------------------------------------------------------------
     Particle* ParticleSystem::makeParticle( float mass, ofPoint p){
     
-        return makeParticle( mass, p.x, p.y, p.z);        
+        return makeParticle( mass, p.x, p.y, p.z );
     
     };
     
