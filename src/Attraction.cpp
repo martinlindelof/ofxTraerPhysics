@@ -87,7 +87,7 @@ namespace traer { namespace physics {
 			
 			// apply
 			
-			if ( !a->fixed )a->force -= ofVec3f( -a2bX, -a2bY, -a2bZ );
+			if ( !a->fixed )a->force += ofVec3f( -a2bX, -a2bY, -a2bZ );
 			if ( !b->fixed )b->force += ofVec3f( a2bX, a2bY, a2bZ );
 		}
 	}
