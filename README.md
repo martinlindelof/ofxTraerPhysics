@@ -1,4 +1,4 @@
-ofxTraerPhysics 3.0.1
+ofxTraerPhysics 3.0.2
 =====================
 Adaption from libcinder version of Traer Physics to dependencies less openframeworks version.
 
@@ -25,15 +25,16 @@ none
 
 Compatibility
 ------------
-0.7.4
+0.9.3
 
 Known issues
 ------------
-There seems to be an issue with Particle Attraction sometimes. They [particles] jiggle a bit to much.
+Issue with jumpy particles & attractors have been solved via e-mail from [names left out] thank you!
 
 Version history
 ------------
 
-
-### Version 3.0.1 (Date): 2013-02-25
+### Version 3.0.2 (Date): 2017-03-07
+Bug update
+Version 3.0.1 (Date): 2013-02-25
 Initial release w/ openframeworks version 0.7.4
